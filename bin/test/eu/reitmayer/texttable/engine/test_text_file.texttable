@@ -1,0 +1,6 @@
+plain SMD
+begin
+  firstColumn from 1 to 5
+  secondColumn from 6 to 15
+  thirdColumn from 16 to 18
+end;

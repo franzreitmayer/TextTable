@@ -1,0 +1,7 @@
+plain SMD
+begin
+  esn from 1 to 10 left
+  supplier from 11 to 20
+  descr from 21 to 50
+  text length 40 right
+end;
