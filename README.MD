@@ -7,4 +7,4 @@ I was looking for a code editor which could treat the text files like plain text
 
 Image
 
-![statement](https://raw.githubusercontent.com/franzreitmayer/TextTable/e201f75cb82e9a06ce61e1b5711a217ea81ef7af/media/statement.rrd.svg)
+![statement](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/statement.png)
