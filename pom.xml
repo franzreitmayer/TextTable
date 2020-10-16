@@ -13,6 +13,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <!--
+        You can use mvn exec:java -Dexec.mainClass="eu.reitmayer.texttable.ui.MainFrame" -Dexec.classpathScope=runtime
+        to run the tool after compilation
+    -->
     <build>
         <sourceDirectory>src</sourceDirectory>
         <plugins>
@@ -27,9 +31,9 @@
                         </goals>
                         <phase>generate-sources</phase>
                         <configuration>
-                            <outputDirectory>src</outputDirectory>
+                            <outputDirectory>src/main/java</outputDirectory>
                             <sources>
-                                <source>src/eu/reitmayer/texttable/lang</source>
+                                <source>src/main/java/eu/reitmayer/texttable/lang</source>
                             </sources>
                         </configuration>
                     </execution>
