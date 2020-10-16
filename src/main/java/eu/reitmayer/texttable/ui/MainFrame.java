@@ -162,6 +162,7 @@ public class MainFrame extends JFrame {
 		init();
 		pack();
 		setExtendedState(JFrame.MAXIMIZED_BOTH);
+		
 	}
 
 	private void init() {
