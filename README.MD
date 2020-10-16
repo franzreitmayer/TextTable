@@ -5,6 +5,8 @@ Although there are a plenty of modern file fomats available which should be cons
 I was looking for a code editor which could treat the text files like plain text and as a table also. As I couldn't found one with staisfing feature for this case I wrote my own.
 
 
-Image
+## UI Overview
+The UI consists of three basic views. The text view which show the text representation (1). The structure description which explains haw the raw text is translated into table data (2). And the table data of the text (3).
+![overview](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/overview.png)
 
 ![statement](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/statement.png)
