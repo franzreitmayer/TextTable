@@ -9,4 +9,8 @@ I was looking for a code editor which could treat the text files like plain text
 The UI consists of three basic views. The text view which show the text representation (1). The structure description which explains haw the raw text is translated into table data (2). And the table data of the text (3).
 ![overview](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/overview.png)
 
+## Text View
+The text view contains the raw text data which is processed. The text view can by populated by copy and paste or by opening a file via the menu.
+![textview](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/text-view01.png)
+
 ![statement](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/statement.png)
