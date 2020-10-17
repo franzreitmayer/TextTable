@@ -6,7 +6,7 @@ I was looking for a code editor which could treat the text files like plain text
 
 
 ## UI Overview
-The UI consists of three basic views. The text view which show the text representation (1). The structure description which explains haw the raw text is translated into table data (2). And the table data of the text (3).
+The UI consists of three basic views. The text view which shows the text representation (1). The structure description which explains how the raw text is translated into table data (2). And the table data of the text (3).
 ![overview](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/overview.png)
 
 ## Text View
@@ -25,7 +25,8 @@ The "TableQuery" e.g. supports simple update statements wich could be used to fi
 After that the table data can be rendered back into raw text applying the structure description again with the "Table to Text" feature. Which is accessable from the toolbar or the menu.
 ![text view 02](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/text-view-02.png)
 
-
+## Language feature
+As mentioned above the tool supports two languages. The "TextTable" language is used to describe the structure of data at the raw text. The "TableQuery" language is used to process the table data. 
 
 
 ![statement](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/statement.png)
