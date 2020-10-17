@@ -72,6 +72,7 @@ import eu.reitmayer.texttable.lang.TextTableParser;
 
 public class MainFrame extends JFrame {
 
+	
 	/**
 	 * @param args
 	 */
