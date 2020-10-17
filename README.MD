@@ -13,8 +13,13 @@ The UI consists of three basic views. The text view which show the text represen
 The text view contains the raw text data which is processed. The text view can by populated by copy and paste or by opening a file via the menu.
 ![textview](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/text-view.png)
 
-## Structure description
-This pane shows the structure description with the text table syntax which is described below in detail. The description is at panel (1). At panel (2) you'd see syntax errors of entered description.
+## Structure description in "Text Table Description" view 
+This pane shows the structure description with the text table syntax which is described below in detail. The description is at panel (1). At panel (2) you'd see syntax errors of entered description. With the "Text to Table Feature" (3) the raw text given at the "Text File" tab is processed into the table structure utilizing the table description and can be shown at the "Table" tab then.
 ![textview](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/description-view.png)
+
+## Table view
+As the raw data was processed into table data you can act on the data like on simple table data at a sql database with a simple sql language "TableQuery" which is described below in detail.
+![table view 01](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/table-view-01.png)
+
 
 ![statement](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/statement.png)
