@@ -20,6 +20,12 @@ This pane shows the structure description with the text table syntax which is de
 ## Table view
 As the raw data was processed into table data you can act on the data like on simple table data at a sql database with a simple sql language "TableQuery" which is described below in detail.
 ![table view 01](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/table-view-01.png)
+The "TableQuery" e.g. supports simple update statements wich could be used to fix data errors for example
+![table view 02](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/table-view-02.png)
+After that the table data can be rendered back into raw text applying the structure description again with the "Table to Text" feature. Which is accessable from the toolbar or the menu.
+![text view 02](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/text-view-02.png)
+
+
 
 
 ![statement](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/statement.png)
