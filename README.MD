@@ -11,6 +11,6 @@ The UI consists of three basic views. The text view which show the text represen
 
 ## Text View
 The text view contains the raw text data which is processed. The text view can by populated by copy and paste or by opening a file via the menu.
-![textview](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/text-view01.png)
+![textview](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/text-view.png)
 
 ![statement](https://raw.githubusercontent.com/franzreitmayer/TextTable/media/media/statement.png)
