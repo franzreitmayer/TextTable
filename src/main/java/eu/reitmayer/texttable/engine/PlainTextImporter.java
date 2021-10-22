@@ -15,7 +15,6 @@ public class PlainTextImporter implements ITextImporter {
 	
 	public List<PlainItemDescription> itemDescriptions = new ArrayList<PlainItemDescription>();
 
-	@Override
 	public TextTable createTextTable(InputStream inputStream) {
 		BufferedReader br = 
 			new BufferedReader(

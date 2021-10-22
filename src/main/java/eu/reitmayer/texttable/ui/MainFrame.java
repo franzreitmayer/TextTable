@@ -487,7 +487,7 @@ public class MainFrame extends JFrame {
 
 		menuItemOpenFile.addActionListener(new ActionListener() {
 
-			@Override
+			
 			public void actionPerformed(ActionEvent e) {
 				openFile();
 			}
@@ -495,7 +495,7 @@ public class MainFrame extends JFrame {
 
 		menuItemSaveFile.addActionListener(new ActionListener() {
 
-			@Override
+			
 			public void actionPerformed(ActionEvent e) {
 				saveFile();
 			}
@@ -503,7 +503,7 @@ public class MainFrame extends JFrame {
 
 		menuItemOpenDescriptionFile.addActionListener(new ActionListener() {
 
-			@Override
+			
 			public void actionPerformed(ActionEvent e) {
 				openDescriptionFile();
 			}
@@ -512,7 +512,7 @@ public class MainFrame extends JFrame {
 
 		menuItemSaveDescriptionFile.addActionListener(new ActionListener() {
 
-			@Override
+			
 			public void actionPerformed(ActionEvent e) {
 				saveDescriptionFile();
 			}
@@ -520,7 +520,7 @@ public class MainFrame extends JFrame {
 
 		menuItemOpenQueryLang.addActionListener(new ActionListener() {
 
-			@Override
+			
 			public void actionPerformed(ActionEvent e) {
 				openQueryLanguageFile();
 			}
@@ -528,7 +528,7 @@ public class MainFrame extends JFrame {
 
 		menuItemSaveQueryLang.addActionListener(new ActionListener() {
 
-			@Override
+			
 			public void actionPerformed(ActionEvent e) {
 				saveQueryLanguageFile();
 			}
@@ -536,7 +536,7 @@ public class MainFrame extends JFrame {
 
 		menuItemCloseApplication.addActionListener(new ActionListener() {
 
-			@Override
+			
 			public void actionPerformed(ActionEvent e) {
 				closeApplication();
 			}

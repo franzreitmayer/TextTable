@@ -1,4 +1,4 @@
-// $ANTLR 3.5 eu\\reitmayer\\texttable\\TextTable.g 2021-10-22 23:08:40
+// $ANTLR 3.5 eu\\reitmayer\\texttable\\lang\\TextTable.g 2021-10-22 23:11:19
 package eu.reitmayer.texttable.lang;
 
 import org.antlr.runtime.*;
@@ -67,7 +67,7 @@ public class TextTableParser extends Parser {
 		return adaptor;
 	}
 	@Override public String[] getTokenNames() { return TextTableParser.tokenNames; }
-	@Override public String getGrammarFileName() { return "eu\\reitmayer\\texttable\\TextTable.g"; }
+	@Override public String getGrammarFileName() { return "eu\\reitmayer\\texttable\\lang\\TextTable.g"; }
 
 
 	public List<RecognitionException> errors = new ArrayList<RecognitionException>();
@@ -87,7 +87,7 @@ public class TextTableParser extends Parser {
 
 
 	// $ANTLR start "table_desc"
-	// eu\\reitmayer\\texttable\\TextTable.g:33:8: public table_desc : ( plain_descr | sep_descr );
+	// eu\\reitmayer\\texttable\\lang\\TextTable.g:33:8: public table_desc : ( plain_descr | sep_descr );
 	public final TextTableParser.table_desc_return table_desc() throws RecognitionException {
 		TextTableParser.table_desc_return retval = new TextTableParser.table_desc_return();
 		retval.start = input.LT(1);
@@ -99,7 +99,7 @@ public class TextTableParser extends Parser {
 
 
 		try {
-			// eu\\reitmayer\\texttable\\TextTable.g:33:18: ( plain_descr | sep_descr )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:33:18: ( plain_descr | sep_descr )
 			int alt1=2;
 			int LA1_0 = input.LA(1);
 			if ( (LA1_0==PLAIN) ) {
@@ -117,7 +117,7 @@ public class TextTableParser extends Parser {
 
 			switch (alt1) {
 				case 1 :
-					// eu\\reitmayer\\texttable\\TextTable.g:34:2: plain_descr
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:34:2: plain_descr
 					{
 					root_0 = (Object)adaptor.nil();
 
@@ -131,7 +131,7 @@ public class TextTableParser extends Parser {
 					}
 					break;
 				case 2 :
-					// eu\\reitmayer\\texttable\\TextTable.g:36:2: sep_descr
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:36:2: sep_descr
 					{
 					root_0 = (Object)adaptor.nil();
 
@@ -173,7 +173,7 @@ public class TextTableParser extends Parser {
 
 
 	// $ANTLR start "plain_descr"
-	// eu\\reitmayer\\texttable\\TextTable.g:40:1: plain_descr : PLAIN ID BEGIN pl= plain_elem_list END ';' -> ^( PLAIN_FILE ID $pl) ;
+	// eu\\reitmayer\\texttable\\lang\\TextTable.g:40:1: plain_descr : PLAIN ID BEGIN pl= plain_elem_list END ';' -> ^( PLAIN_FILE ID $pl) ;
 	public final TextTableParser.plain_descr_return plain_descr() throws RecognitionException {
 		TextTableParser.plain_descr_return retval = new TextTableParser.plain_descr_return();
 		retval.start = input.LT(1);
@@ -200,8 +200,8 @@ public class TextTableParser extends Parser {
 		RewriteRuleSubtreeStream stream_plain_elem_list=new RewriteRuleSubtreeStream(adaptor,"rule plain_elem_list");
 
 		try {
-			// eu\\reitmayer\\texttable\\TextTable.g:40:12: ( PLAIN ID BEGIN pl= plain_elem_list END ';' -> ^( PLAIN_FILE ID $pl) )
-			// eu\\reitmayer\\texttable\\TextTable.g:41:2: PLAIN ID BEGIN pl= plain_elem_list END ';'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:40:12: ( PLAIN ID BEGIN pl= plain_elem_list END ';' -> ^( PLAIN_FILE ID $pl) )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:41:2: PLAIN ID BEGIN pl= plain_elem_list END ';'
 			{
 			PLAIN3=(Token)match(input,PLAIN,FOLLOW_PLAIN_in_plain_descr103);  
 			stream_PLAIN.add(PLAIN3);
@@ -237,7 +237,7 @@ public class TextTableParser extends Parser {
 			root_0 = (Object)adaptor.nil();
 			// 44:10: -> ^( PLAIN_FILE ID $pl)
 			{
-				// eu\\reitmayer\\texttable\\TextTable.g:44:13: ^( PLAIN_FILE ID $pl)
+				// eu\\reitmayer\\texttable\\lang\\TextTable.g:44:13: ^( PLAIN_FILE ID $pl)
 				{
 				Object root_1 = (Object)adaptor.nil();
 				root_1 = (Object)adaptor.becomeRoot((Object)adaptor.create(PLAIN_FILE, "PLAIN_FILE"), root_1);
@@ -280,7 +280,7 @@ public class TextTableParser extends Parser {
 
 
 	// $ANTLR start "sep_descr"
-	// eu\\reitmayer\\texttable\\TextTable.g:47:1: sep_descr : SEPARATED BEGIN END ';' ;
+	// eu\\reitmayer\\texttable\\lang\\TextTable.g:47:1: sep_descr : SEPARATED BEGIN END ';' ;
 	public final TextTableParser.sep_descr_return sep_descr() throws RecognitionException {
 		TextTableParser.sep_descr_return retval = new TextTableParser.sep_descr_return();
 		retval.start = input.LT(1);
@@ -298,8 +298,8 @@ public class TextTableParser extends Parser {
 		Object char_literal11_tree=null;
 
 		try {
-			// eu\\reitmayer\\texttable\\TextTable.g:47:10: ( SEPARATED BEGIN END ';' )
-			// eu\\reitmayer\\texttable\\TextTable.g:48:2: SEPARATED BEGIN END ';'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:47:10: ( SEPARATED BEGIN END ';' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:48:2: SEPARATED BEGIN END ';'
 			{
 			root_0 = (Object)adaptor.nil();
 
@@ -349,7 +349,7 @@ public class TextTableParser extends Parser {
 
 
 	// $ANTLR start "plain_elem_list"
-	// eu\\reitmayer\\texttable\\TextTable.g:53:1: plain_elem_list :p+= plain_elem ( ',' p+= plain_elem )* -> ^( PLAIN_ELEM_LIST ( $p)+ ) ;
+	// eu\\reitmayer\\texttable\\lang\\TextTable.g:53:1: plain_elem_list :p+= plain_elem ( ',' p+= plain_elem )* -> ^( PLAIN_ELEM_LIST ( $p)+ ) ;
 	public final TextTableParser.plain_elem_list_return plain_elem_list() throws RecognitionException {
 		TextTableParser.plain_elem_list_return retval = new TextTableParser.plain_elem_list_return();
 		retval.start = input.LT(1);
@@ -364,8 +364,8 @@ public class TextTableParser extends Parser {
 		RewriteRuleSubtreeStream stream_plain_elem=new RewriteRuleSubtreeStream(adaptor,"rule plain_elem");
 
 		try {
-			// eu\\reitmayer\\texttable\\TextTable.g:53:16: (p+= plain_elem ( ',' p+= plain_elem )* -> ^( PLAIN_ELEM_LIST ( $p)+ ) )
-			// eu\\reitmayer\\texttable\\TextTable.g:54:2: p+= plain_elem ( ',' p+= plain_elem )*
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:53:16: (p+= plain_elem ( ',' p+= plain_elem )* -> ^( PLAIN_ELEM_LIST ( $p)+ ) )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:54:2: p+= plain_elem ( ',' p+= plain_elem )*
 			{
 			pushFollow(FOLLOW_plain_elem_in_plain_elem_list161);
 			p=plain_elem();
@@ -374,7 +374,7 @@ public class TextTableParser extends Parser {
 			stream_plain_elem.add(p.getTree());
 			if (list_p==null) list_p=new ArrayList<Object>();
 			list_p.add(p.getTree());
-			// eu\\reitmayer\\texttable\\TextTable.g:54:16: ( ',' p+= plain_elem )*
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:54:16: ( ',' p+= plain_elem )*
 			loop2:
 			while (true) {
 				int alt2=2;
@@ -385,7 +385,7 @@ public class TextTableParser extends Parser {
 
 				switch (alt2) {
 				case 1 :
-					// eu\\reitmayer\\texttable\\TextTable.g:54:17: ',' p+= plain_elem
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:54:17: ',' p+= plain_elem
 					{
 					char_literal12=(Token)match(input,26,FOLLOW_26_in_plain_elem_list164);  
 					stream_26.add(char_literal12);
@@ -418,7 +418,7 @@ public class TextTableParser extends Parser {
 			root_0 = (Object)adaptor.nil();
 			// 54:37: -> ^( PLAIN_ELEM_LIST ( $p)+ )
 			{
-				// eu\\reitmayer\\texttable\\TextTable.g:54:40: ^( PLAIN_ELEM_LIST ( $p)+ )
+				// eu\\reitmayer\\texttable\\lang\\TextTable.g:54:40: ^( PLAIN_ELEM_LIST ( $p)+ )
 				{
 				Object root_1 = (Object)adaptor.nil();
 				root_1 = (Object)adaptor.becomeRoot((Object)adaptor.create(PLAIN_ELEM_LIST, "PLAIN_ELEM_LIST"), root_1);
@@ -467,7 +467,7 @@ public class TextTableParser extends Parser {
 
 
 	// $ANTLR start "plain_elem"
-	// eu\\reitmayer\\texttable\\TextTable.g:57:1: plain_elem : ( ID FROM i1= INT TO i2= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 $i2 ( $al)? ) | ID LENGTH i1= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 ( $al)? ) );
+	// eu\\reitmayer\\texttable\\lang\\TextTable.g:57:1: plain_elem : ( ID FROM i1= INT TO i2= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 $i2 ( $al)? ) | ID LENGTH i1= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 ( $al)? ) );
 	public final TextTableParser.plain_elem_return plain_elem() throws RecognitionException {
 		TextTableParser.plain_elem_return retval = new TextTableParser.plain_elem_return();
 		retval.start = input.LT(1);
@@ -500,7 +500,7 @@ public class TextTableParser extends Parser {
 		RewriteRuleTokenStream stream_ALIGN_LEFT=new RewriteRuleTokenStream(adaptor,"token ALIGN_LEFT");
 
 		try {
-			// eu\\reitmayer\\texttable\\TextTable.g:57:11: ( ID FROM i1= INT TO i2= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 $i2 ( $al)? ) | ID LENGTH i1= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 ( $al)? ) )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:57:11: ( ID FROM i1= INT TO i2= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 $i2 ( $al)? ) | ID LENGTH i1= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 ( $al)? ) )
 			int alt5=2;
 			int LA5_0 = input.LA(1);
 			if ( (LA5_0==ID) ) {
@@ -534,7 +534,7 @@ public class TextTableParser extends Parser {
 
 			switch (alt5) {
 				case 1 :
-					// eu\\reitmayer\\texttable\\TextTable.g:58:3: ID FROM i1= INT TO i2= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:58:3: ID FROM i1= INT TO i2= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
 					{
 					ID13=(Token)match(input,ID,FOLLOW_ID_in_plain_elem193);  
 					stream_ID.add(ID13);
@@ -551,7 +551,7 @@ public class TextTableParser extends Parser {
 					i2=(Token)match(input,INT,FOLLOW_INT_in_plain_elem205);  
 					stream_INT.add(i2);
 
-					// eu\\reitmayer\\texttable\\TextTable.g:58:28: (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:58:28: (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
 					int alt3=3;
 					int LA3_0 = input.LA(1);
 					if ( (LA3_0==ALIGN_LEFT) ) {
@@ -562,7 +562,7 @@ public class TextTableParser extends Parser {
 					}
 					switch (alt3) {
 						case 1 :
-							// eu\\reitmayer\\texttable\\TextTable.g:58:29: al= ALIGN_LEFT
+							// eu\\reitmayer\\texttable\\lang\\TextTable.g:58:29: al= ALIGN_LEFT
 							{
 							al=(Token)match(input,ALIGN_LEFT,FOLLOW_ALIGN_LEFT_in_plain_elem210);  
 							stream_ALIGN_LEFT.add(al);
@@ -570,7 +570,7 @@ public class TextTableParser extends Parser {
 							}
 							break;
 						case 2 :
-							// eu\\reitmayer\\texttable\\TextTable.g:58:45: al= ALIGN_RIGHT
+							// eu\\reitmayer\\texttable\\lang\\TextTable.g:58:45: al= ALIGN_RIGHT
 							{
 							al=(Token)match(input,ALIGN_RIGHT,FOLLOW_ALIGN_RIGHT_in_plain_elem216);  
 							stream_ALIGN_RIGHT.add(al);
@@ -581,7 +581,7 @@ public class TextTableParser extends Parser {
 					}
 
 					// AST REWRITE
-					// elements: i2, al, i1, ID
+					// elements: i1, al, i2, ID
 					// token labels: i1, i2, al
 					// rule labels: retval
 					// token list labels: 
@@ -596,13 +596,13 @@ public class TextTableParser extends Parser {
 					root_0 = (Object)adaptor.nil();
 					// 58:62: -> ^( ID $i1 $i2 ( $al)? )
 					{
-						// eu\\reitmayer\\texttable\\TextTable.g:58:65: ^( ID $i1 $i2 ( $al)? )
+						// eu\\reitmayer\\texttable\\lang\\TextTable.g:58:65: ^( ID $i1 $i2 ( $al)? )
 						{
 						Object root_1 = (Object)adaptor.nil();
 						root_1 = (Object)adaptor.becomeRoot(stream_ID.nextNode(), root_1);
 						adaptor.addChild(root_1, stream_i1.nextNode());
 						adaptor.addChild(root_1, stream_i2.nextNode());
-						// eu\\reitmayer\\texttable\\TextTable.g:58:79: ( $al)?
+						// eu\\reitmayer\\texttable\\lang\\TextTable.g:58:79: ( $al)?
 						if ( stream_al.hasNext() ) {
 							adaptor.addChild(root_1, stream_al.nextNode());
 						}
@@ -619,7 +619,7 @@ public class TextTableParser extends Parser {
 					}
 					break;
 				case 2 :
-					// eu\\reitmayer\\texttable\\TextTable.g:60:3: ID LENGTH i1= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:60:3: ID LENGTH i1= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
 					{
 					ID16=(Token)match(input,ID,FOLLOW_ID_in_plain_elem242);  
 					stream_ID.add(ID16);
@@ -630,7 +630,7 @@ public class TextTableParser extends Parser {
 					i1=(Token)match(input,INT,FOLLOW_INT_in_plain_elem248);  
 					stream_INT.add(i1);
 
-					// eu\\reitmayer\\texttable\\TextTable.g:60:20: (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:60:20: (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
 					int alt4=3;
 					int LA4_0 = input.LA(1);
 					if ( (LA4_0==ALIGN_LEFT) ) {
@@ -641,7 +641,7 @@ public class TextTableParser extends Parser {
 					}
 					switch (alt4) {
 						case 1 :
-							// eu\\reitmayer\\texttable\\TextTable.g:60:21: al= ALIGN_LEFT
+							// eu\\reitmayer\\texttable\\lang\\TextTable.g:60:21: al= ALIGN_LEFT
 							{
 							al=(Token)match(input,ALIGN_LEFT,FOLLOW_ALIGN_LEFT_in_plain_elem253);  
 							stream_ALIGN_LEFT.add(al);
@@ -649,7 +649,7 @@ public class TextTableParser extends Parser {
 							}
 							break;
 						case 2 :
-							// eu\\reitmayer\\texttable\\TextTable.g:60:37: al= ALIGN_RIGHT
+							// eu\\reitmayer\\texttable\\lang\\TextTable.g:60:37: al= ALIGN_RIGHT
 							{
 							al=(Token)match(input,ALIGN_RIGHT,FOLLOW_ALIGN_RIGHT_in_plain_elem259);  
 							stream_ALIGN_RIGHT.add(al);
@@ -660,7 +660,7 @@ public class TextTableParser extends Parser {
 					}
 
 					// AST REWRITE
-					// elements: ID, al, i1
+					// elements: al, ID, i1
 					// token labels: i1, al
 					// rule labels: retval
 					// token list labels: 
@@ -674,12 +674,12 @@ public class TextTableParser extends Parser {
 					root_0 = (Object)adaptor.nil();
 					// 60:54: -> ^( ID $i1 ( $al)? )
 					{
-						// eu\\reitmayer\\texttable\\TextTable.g:60:57: ^( ID $i1 ( $al)? )
+						// eu\\reitmayer\\texttable\\lang\\TextTable.g:60:57: ^( ID $i1 ( $al)? )
 						{
 						Object root_1 = (Object)adaptor.nil();
 						root_1 = (Object)adaptor.becomeRoot(stream_ID.nextNode(), root_1);
 						adaptor.addChild(root_1, stream_i1.nextNode());
-						// eu\\reitmayer\\texttable\\TextTable.g:60:67: ( $al)?
+						// eu\\reitmayer\\texttable\\lang\\TextTable.g:60:67: ( $al)?
 						if ( stream_al.hasNext() ) {
 							adaptor.addChild(root_1, stream_al.nextNode());
 						}

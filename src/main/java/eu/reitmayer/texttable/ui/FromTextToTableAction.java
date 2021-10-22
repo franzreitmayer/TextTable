@@ -13,7 +13,6 @@ public class FromTextToTableAction extends AbstractAction {
 		this.mainFrame = mainFrame;
 	}
 	
-	@Override
 	public void actionPerformed(ActionEvent e) {
 		mainFrame.runImport();
 	}

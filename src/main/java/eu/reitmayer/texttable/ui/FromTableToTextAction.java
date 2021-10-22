@@ -14,7 +14,6 @@ public class FromTableToTextAction extends AbstractAction {
 		this.mainFrame = mainFrame;
 	}
 	
-	@Override
 	public void actionPerformed(ActionEvent e) {
 		mainFrame.fromTableToText();
 	}

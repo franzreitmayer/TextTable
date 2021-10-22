@@ -16,6 +16,8 @@
     <!--
         You can use mvn exec:java -Dexec.mainClass="eu.reitmayer.texttable.ui.MainFrame" -Dexec.classpathScope=runtime
         to run the tool after compilation
+
+        mvn exec:java -Dexec.mainClass="eu.reitmayer.texttable.ui.MainFrame"
     -->
     <build>
        
@@ -23,7 +25,7 @@
             <plugin>
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr3-maven-plugin</artifactId>
-                <version>3.4</version>
+                <version>3.5</version>
                 <executions>
                     <execution>
                         <goals>

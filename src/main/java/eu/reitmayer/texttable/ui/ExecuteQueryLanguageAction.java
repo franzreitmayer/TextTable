@@ -13,7 +13,7 @@ public class ExecuteQueryLanguageAction extends AbstractAction {
 		this.mainFrame = mainFrame;
 	}
 	
-	@Override
+	
 	public void actionPerformed(ActionEvent e) {
 		mainFrame.executeQueryLanguage();
 	}
