@@ -1,4 +1,6 @@
 image: maven:latest
 
+prepare:
+    script: "javac --version"
 build:
   script: "mvn install -B"
