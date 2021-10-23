@@ -9,6 +9,7 @@ build:
   script: "mvn package -B"
 
 deploy:
+  needs: ["build"]
   image: reitmayer/TextTable
   only:
     - tags
