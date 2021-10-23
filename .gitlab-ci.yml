@@ -8,8 +8,8 @@ build:
   needs: ["prepare"]
   script: "mvn package -B"
 
-upload:
-  stage: upload
+deploy:
+  stage: deploy
   image: reitmayer/TextTable
   only:
     - tags
