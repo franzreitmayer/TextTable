@@ -1,5 +1,10 @@
 image: maven:latest
 
+stages:
+  - prepare
+  - build
+  - upload
+
 prepare:
     script: "javac --version"
 
