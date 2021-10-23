@@ -18,4 +18,4 @@ upload:
   only:
     - tags
   script:
-    - curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file ./target/texttool-1.0-SNAPSHOT-zip-package.zip ${PACKAGE_REGISTRY_URL}/texttool-1.0-SNAPSHOT-zip-package.zip
+    - "curl --header 'JOB-TOKEN: ${CI_JOB_TOKEN}' --upload-file ./target/texttool-1.0-SNAPSHOT-zip-package.zip ${PACKAGE_REGISTRY_URL}/texttool-1.0-SNAPSHOT-zip-package.zip"
