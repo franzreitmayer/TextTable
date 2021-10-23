@@ -200,7 +200,8 @@ public class MainFrame extends JFrame {
 		scrPaneQLEditor.setBorder(BorderFactory.createTitledBorder(Messages.getString("MainFrame.GroupTitleQueryLanguageErrors"))); //$NON-NLS-1$
 		splitPaneQL.add(splitPane);
 		splitPaneQL.add(scrPaneQLEditor);
-		tabbedPane.addTab(Messages.getString("MainFrame.TabTitleTable"), splitPaneQL); //$NON-NLS-1$
+		splitPaneQL.setResizeWeight(0.99);
+		splitPaneQL.setDividerLocation(0.99);		tabbedPane.addTab(Messages.getString("MainFrame.TabTitleTable"), splitPaneQL); //$NON-NLS-1$
 
 		table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 		getContentPane().add(tabbedPane, BorderLayout.CENTER);
