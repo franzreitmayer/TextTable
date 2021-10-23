@@ -6,12 +6,7 @@ prepare:
 
 build:
   needs: ["prepare"]
-  script: "mvn package -B"
-
-deploy:
-  needs: ["build"]
-  image: reitmayer/TextTable
-  only:
-    - tags
-  script:
+  script: 
+    - "mvn package -B"
     - "curl --header 'JOB-TOKEN: ${CI_JOB_TOKEN}' --upload-file ./target/texttool-1.0-SNAPSHOT-zip-package.zip ${PACKAGE_REGISTRY_URL}/texttool-1.0-SNAPSHOT-zip-package.zip"
+    
