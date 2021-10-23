@@ -7,7 +7,7 @@ build:
   needs: ["prepare"]
   script: "mvn package -B"
 
-  upload:
+upload:
   stage: upload
   image: reitmayer/TextTable
   only:
