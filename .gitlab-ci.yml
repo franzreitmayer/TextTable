@@ -5,4 +5,4 @@ prepare:
 
 build:
   needs: ["prepare"]
-  script: "mvn install -B"
+  script: "mvn package -B"
