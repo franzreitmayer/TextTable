@@ -1,4 +1,4 @@
-// $ANTLR 3.5 eu\\reitmayer\\texttable\\lang\\TextTable.g 2021-10-22 23:11:21
+// $ANTLR 3.5 eu\\reitmayer\\texttable\\lang\\TextTable.g 2021-10-23 10:22:07
 package eu.reitmayer.texttable.lang;
 
 import org.antlr.runtime.*;

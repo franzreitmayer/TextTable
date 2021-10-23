@@ -45,7 +45,7 @@ plain_descr:
 	;
 
 sep_descr:
-	SEPARATED
+	SEPARATED ID
 	BEGIN
 	END ';'
 	;
