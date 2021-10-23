@@ -44,6 +44,9 @@ plain_descr:
 	END ';' -> ^(PLAIN_FILE ID $pl)
 	;
 
+/**
+ * separated test headers auto prefix ' ' strings enclosed by "\"" escaped by 
+ */
 sep_descr:
 	SEPARATED ID
 	BEGIN
