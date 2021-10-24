@@ -199,9 +199,12 @@ public class MainFrame extends JFrame {
 		scrPaneQLEditor = new JScrollPane(tableTableQueryErrors = new JTable());
 		scrPaneQLEditor.setBorder(BorderFactory.createTitledBorder(Messages.getString("MainFrame.GroupTitleQueryLanguageErrors"))); //$NON-NLS-1$
 		splitPaneQL.add(splitPane);
+		splitPane.setResizeWeight(0.70);
+		splitPane.setDividerLocation(0.70);		tabbedPane.addTab(Messages.getString("MainFrame.TabTitleTable"), splitPaneQL); //$NON-NLS-1$
+		
 		splitPaneQL.add(scrPaneQLEditor);
-		splitPaneQL.setResizeWeight(0.99);
-		splitPaneQL.setDividerLocation(0.99);		tabbedPane.addTab(Messages.getString("MainFrame.TabTitleTable"), splitPaneQL); //$NON-NLS-1$
+		splitPaneQL.setResizeWeight(0.90);
+		splitPaneQL.setDividerLocation(0.90);		tabbedPane.addTab(Messages.getString("MainFrame.TabTitleTable"), splitPaneQL); //$NON-NLS-1$
 
 		table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 		getContentPane().add(tabbedPane, BorderLayout.CENTER);
