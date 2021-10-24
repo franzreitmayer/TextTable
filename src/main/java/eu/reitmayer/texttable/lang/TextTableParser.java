@@ -1,4 +1,4 @@
-// $ANTLR 3.5 eu\\reitmayer\\texttable\\lang\\TextTable.g 2021-10-23 15:07:04
+// $ANTLR 3.5 eu\\reitmayer\\texttable\\lang\\TextTable.g 2021-10-24 19:15:39
 package eu.reitmayer.texttable.lang;
 
 import org.antlr.runtime.*;
@@ -224,7 +224,7 @@ public class TextTableParser extends Parser {
 			stream_27.add(char_literal7);
 
 			// AST REWRITE
-			// elements: ID, pl
+			// elements: pl, ID
 			// token labels: 
 			// rule labels: pl, retval
 			// token list labels: 
@@ -587,7 +587,7 @@ public class TextTableParser extends Parser {
 					}
 
 					// AST REWRITE
-					// elements: i1, al, i2, ID
+					// elements: i2, ID, al, i1
 					// token labels: i1, i2, al
 					// rule labels: retval
 					// token list labels: 
@@ -666,7 +666,7 @@ public class TextTableParser extends Parser {
 					}
 
 					// AST REWRITE
-					// elements: i1, ID, al
+					// elements: i1, al, ID
 					// token labels: i1, al
 					// rule labels: retval
 					// token list labels: 
