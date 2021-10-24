@@ -1,4 +1,4 @@
-// $ANTLR 3.5 eu\\reitmayer\\texttable\\lang\\TextTable.g 2021-10-22 23:11:19
+// $ANTLR 3.5 eu\\reitmayer\\texttable\\lang\\TextTable.g 2021-10-23 15:07:04
 package eu.reitmayer.texttable.lang;
 
 import org.antlr.runtime.*;
@@ -280,7 +280,7 @@ public class TextTableParser extends Parser {
 
 
 	// $ANTLR start "sep_descr"
-	// eu\\reitmayer\\texttable\\lang\\TextTable.g:47:1: sep_descr : SEPARATED BEGIN END ';' ;
+	// eu\\reitmayer\\texttable\\lang\\TextTable.g:50:1: sep_descr : SEPARATED ID BEGIN END ';' ;
 	public final TextTableParser.sep_descr_return sep_descr() throws RecognitionException {
 		TextTableParser.sep_descr_return retval = new TextTableParser.sep_descr_return();
 		retval.start = input.LT(1);
@@ -288,37 +288,43 @@ public class TextTableParser extends Parser {
 		Object root_0 = null;
 
 		Token SEPARATED8=null;
-		Token BEGIN9=null;
-		Token END10=null;
-		Token char_literal11=null;
+		Token ID9=null;
+		Token BEGIN10=null;
+		Token END11=null;
+		Token char_literal12=null;
 
 		Object SEPARATED8_tree=null;
-		Object BEGIN9_tree=null;
-		Object END10_tree=null;
-		Object char_literal11_tree=null;
+		Object ID9_tree=null;
+		Object BEGIN10_tree=null;
+		Object END11_tree=null;
+		Object char_literal12_tree=null;
 
 		try {
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:47:10: ( SEPARATED BEGIN END ';' )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:48:2: SEPARATED BEGIN END ';'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:50:10: ( SEPARATED ID BEGIN END ';' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:51:2: SEPARATED ID BEGIN END ';'
 			{
 			root_0 = (Object)adaptor.nil();
 
 
-			SEPARATED8=(Token)match(input,SEPARATED,FOLLOW_SEPARATED_in_sep_descr141); 
+			SEPARATED8=(Token)match(input,SEPARATED,FOLLOW_SEPARATED_in_sep_descr143); 
 			SEPARATED8_tree = (Object)adaptor.create(SEPARATED8);
 			adaptor.addChild(root_0, SEPARATED8_tree);
 
-			BEGIN9=(Token)match(input,BEGIN,FOLLOW_BEGIN_in_sep_descr144); 
-			BEGIN9_tree = (Object)adaptor.create(BEGIN9);
-			adaptor.addChild(root_0, BEGIN9_tree);
+			ID9=(Token)match(input,ID,FOLLOW_ID_in_sep_descr145); 
+			ID9_tree = (Object)adaptor.create(ID9);
+			adaptor.addChild(root_0, ID9_tree);
 
-			END10=(Token)match(input,END,FOLLOW_END_in_sep_descr147); 
-			END10_tree = (Object)adaptor.create(END10);
-			adaptor.addChild(root_0, END10_tree);
+			BEGIN10=(Token)match(input,BEGIN,FOLLOW_BEGIN_in_sep_descr148); 
+			BEGIN10_tree = (Object)adaptor.create(BEGIN10);
+			adaptor.addChild(root_0, BEGIN10_tree);
 
-			char_literal11=(Token)match(input,27,FOLLOW_27_in_sep_descr149); 
-			char_literal11_tree = (Object)adaptor.create(char_literal11);
-			adaptor.addChild(root_0, char_literal11_tree);
+			END11=(Token)match(input,END,FOLLOW_END_in_sep_descr151); 
+			END11_tree = (Object)adaptor.create(END11);
+			adaptor.addChild(root_0, END11_tree);
+
+			char_literal12=(Token)match(input,27,FOLLOW_27_in_sep_descr153); 
+			char_literal12_tree = (Object)adaptor.create(char_literal12);
+			adaptor.addChild(root_0, char_literal12_tree);
 
 			}
 
@@ -349,32 +355,32 @@ public class TextTableParser extends Parser {
 
 
 	// $ANTLR start "plain_elem_list"
-	// eu\\reitmayer\\texttable\\lang\\TextTable.g:53:1: plain_elem_list :p+= plain_elem ( ',' p+= plain_elem )* -> ^( PLAIN_ELEM_LIST ( $p)+ ) ;
+	// eu\\reitmayer\\texttable\\lang\\TextTable.g:56:1: plain_elem_list :p+= plain_elem ( ',' p+= plain_elem )* -> ^( PLAIN_ELEM_LIST ( $p)+ ) ;
 	public final TextTableParser.plain_elem_list_return plain_elem_list() throws RecognitionException {
 		TextTableParser.plain_elem_list_return retval = new TextTableParser.plain_elem_list_return();
 		retval.start = input.LT(1);
 
 		Object root_0 = null;
 
-		Token char_literal12=null;
+		Token char_literal13=null;
 		List<Object> list_p=null;
 		RuleReturnScope p = null;
-		Object char_literal12_tree=null;
+		Object char_literal13_tree=null;
 		RewriteRuleTokenStream stream_26=new RewriteRuleTokenStream(adaptor,"token 26");
 		RewriteRuleSubtreeStream stream_plain_elem=new RewriteRuleSubtreeStream(adaptor,"rule plain_elem");
 
 		try {
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:53:16: (p+= plain_elem ( ',' p+= plain_elem )* -> ^( PLAIN_ELEM_LIST ( $p)+ ) )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:54:2: p+= plain_elem ( ',' p+= plain_elem )*
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:56:16: (p+= plain_elem ( ',' p+= plain_elem )* -> ^( PLAIN_ELEM_LIST ( $p)+ ) )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:57:2: p+= plain_elem ( ',' p+= plain_elem )*
 			{
-			pushFollow(FOLLOW_plain_elem_in_plain_elem_list161);
+			pushFollow(FOLLOW_plain_elem_in_plain_elem_list165);
 			p=plain_elem();
 			state._fsp--;
 
 			stream_plain_elem.add(p.getTree());
 			if (list_p==null) list_p=new ArrayList<Object>();
 			list_p.add(p.getTree());
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:54:16: ( ',' p+= plain_elem )*
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:57:16: ( ',' p+= plain_elem )*
 			loop2:
 			while (true) {
 				int alt2=2;
@@ -385,12 +391,12 @@ public class TextTableParser extends Parser {
 
 				switch (alt2) {
 				case 1 :
-					// eu\\reitmayer\\texttable\\lang\\TextTable.g:54:17: ',' p+= plain_elem
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:57:17: ',' p+= plain_elem
 					{
-					char_literal12=(Token)match(input,26,FOLLOW_26_in_plain_elem_list164);  
-					stream_26.add(char_literal12);
+					char_literal13=(Token)match(input,26,FOLLOW_26_in_plain_elem_list168);  
+					stream_26.add(char_literal13);
 
-					pushFollow(FOLLOW_plain_elem_in_plain_elem_list168);
+					pushFollow(FOLLOW_plain_elem_in_plain_elem_list172);
 					p=plain_elem();
 					state._fsp--;
 
@@ -416,9 +422,9 @@ public class TextTableParser extends Parser {
 			RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.getTree():null);
 			RewriteRuleSubtreeStream stream_p=new RewriteRuleSubtreeStream(adaptor,"token p",list_p);
 			root_0 = (Object)adaptor.nil();
-			// 54:37: -> ^( PLAIN_ELEM_LIST ( $p)+ )
+			// 57:37: -> ^( PLAIN_ELEM_LIST ( $p)+ )
 			{
-				// eu\\reitmayer\\texttable\\lang\\TextTable.g:54:40: ^( PLAIN_ELEM_LIST ( $p)+ )
+				// eu\\reitmayer\\texttable\\lang\\TextTable.g:57:40: ^( PLAIN_ELEM_LIST ( $p)+ )
 				{
 				Object root_1 = (Object)adaptor.nil();
 				root_1 = (Object)adaptor.becomeRoot((Object)adaptor.create(PLAIN_ELEM_LIST, "PLAIN_ELEM_LIST"), root_1);
@@ -467,7 +473,7 @@ public class TextTableParser extends Parser {
 
 
 	// $ANTLR start "plain_elem"
-	// eu\\reitmayer\\texttable\\lang\\TextTable.g:57:1: plain_elem : ( ID FROM i1= INT TO i2= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 $i2 ( $al)? ) | ID LENGTH i1= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 ( $al)? ) );
+	// eu\\reitmayer\\texttable\\lang\\TextTable.g:60:1: plain_elem : ( ID FROM i1= INT TO i2= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 $i2 ( $al)? ) | ID LENGTH i1= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 ( $al)? ) );
 	public final TextTableParser.plain_elem_return plain_elem() throws RecognitionException {
 		TextTableParser.plain_elem_return retval = new TextTableParser.plain_elem_return();
 		retval.start = input.LT(1);
@@ -477,20 +483,20 @@ public class TextTableParser extends Parser {
 		Token i1=null;
 		Token i2=null;
 		Token al=null;
-		Token ID13=null;
-		Token FROM14=null;
-		Token TO15=null;
-		Token ID16=null;
-		Token LENGTH17=null;
+		Token ID14=null;
+		Token FROM15=null;
+		Token TO16=null;
+		Token ID17=null;
+		Token LENGTH18=null;
 
 		Object i1_tree=null;
 		Object i2_tree=null;
 		Object al_tree=null;
-		Object ID13_tree=null;
-		Object FROM14_tree=null;
-		Object TO15_tree=null;
-		Object ID16_tree=null;
-		Object LENGTH17_tree=null;
+		Object ID14_tree=null;
+		Object FROM15_tree=null;
+		Object TO16_tree=null;
+		Object ID17_tree=null;
+		Object LENGTH18_tree=null;
 		RewriteRuleTokenStream stream_LENGTH=new RewriteRuleTokenStream(adaptor,"token LENGTH");
 		RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
 		RewriteRuleTokenStream stream_FROM=new RewriteRuleTokenStream(adaptor,"token FROM");
@@ -500,7 +506,7 @@ public class TextTableParser extends Parser {
 		RewriteRuleTokenStream stream_ALIGN_LEFT=new RewriteRuleTokenStream(adaptor,"token ALIGN_LEFT");
 
 		try {
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:57:11: ( ID FROM i1= INT TO i2= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 $i2 ( $al)? ) | ID LENGTH i1= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 ( $al)? ) )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:60:11: ( ID FROM i1= INT TO i2= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 $i2 ( $al)? ) | ID LENGTH i1= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )? -> ^( ID $i1 ( $al)? ) )
 			int alt5=2;
 			int LA5_0 = input.LA(1);
 			if ( (LA5_0==ID) ) {
@@ -534,24 +540,24 @@ public class TextTableParser extends Parser {
 
 			switch (alt5) {
 				case 1 :
-					// eu\\reitmayer\\texttable\\lang\\TextTable.g:58:3: ID FROM i1= INT TO i2= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:61:3: ID FROM i1= INT TO i2= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
 					{
-					ID13=(Token)match(input,ID,FOLLOW_ID_in_plain_elem193);  
-					stream_ID.add(ID13);
+					ID14=(Token)match(input,ID,FOLLOW_ID_in_plain_elem197);  
+					stream_ID.add(ID14);
 
-					FROM14=(Token)match(input,FROM,FOLLOW_FROM_in_plain_elem195);  
-					stream_FROM.add(FROM14);
+					FROM15=(Token)match(input,FROM,FOLLOW_FROM_in_plain_elem199);  
+					stream_FROM.add(FROM15);
 
-					i1=(Token)match(input,INT,FOLLOW_INT_in_plain_elem199);  
+					i1=(Token)match(input,INT,FOLLOW_INT_in_plain_elem203);  
 					stream_INT.add(i1);
 
-					TO15=(Token)match(input,TO,FOLLOW_TO_in_plain_elem201);  
-					stream_TO.add(TO15);
+					TO16=(Token)match(input,TO,FOLLOW_TO_in_plain_elem205);  
+					stream_TO.add(TO16);
 
-					i2=(Token)match(input,INT,FOLLOW_INT_in_plain_elem205);  
+					i2=(Token)match(input,INT,FOLLOW_INT_in_plain_elem209);  
 					stream_INT.add(i2);
 
-					// eu\\reitmayer\\texttable\\lang\\TextTable.g:58:28: (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:61:28: (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
 					int alt3=3;
 					int LA3_0 = input.LA(1);
 					if ( (LA3_0==ALIGN_LEFT) ) {
@@ -562,17 +568,17 @@ public class TextTableParser extends Parser {
 					}
 					switch (alt3) {
 						case 1 :
-							// eu\\reitmayer\\texttable\\lang\\TextTable.g:58:29: al= ALIGN_LEFT
+							// eu\\reitmayer\\texttable\\lang\\TextTable.g:61:29: al= ALIGN_LEFT
 							{
-							al=(Token)match(input,ALIGN_LEFT,FOLLOW_ALIGN_LEFT_in_plain_elem210);  
+							al=(Token)match(input,ALIGN_LEFT,FOLLOW_ALIGN_LEFT_in_plain_elem214);  
 							stream_ALIGN_LEFT.add(al);
 
 							}
 							break;
 						case 2 :
-							// eu\\reitmayer\\texttable\\lang\\TextTable.g:58:45: al= ALIGN_RIGHT
+							// eu\\reitmayer\\texttable\\lang\\TextTable.g:61:45: al= ALIGN_RIGHT
 							{
-							al=(Token)match(input,ALIGN_RIGHT,FOLLOW_ALIGN_RIGHT_in_plain_elem216);  
+							al=(Token)match(input,ALIGN_RIGHT,FOLLOW_ALIGN_RIGHT_in_plain_elem220);  
 							stream_ALIGN_RIGHT.add(al);
 
 							}
@@ -594,15 +600,15 @@ public class TextTableParser extends Parser {
 					RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.getTree():null);
 
 					root_0 = (Object)adaptor.nil();
-					// 58:62: -> ^( ID $i1 $i2 ( $al)? )
+					// 61:62: -> ^( ID $i1 $i2 ( $al)? )
 					{
-						// eu\\reitmayer\\texttable\\lang\\TextTable.g:58:65: ^( ID $i1 $i2 ( $al)? )
+						// eu\\reitmayer\\texttable\\lang\\TextTable.g:61:65: ^( ID $i1 $i2 ( $al)? )
 						{
 						Object root_1 = (Object)adaptor.nil();
 						root_1 = (Object)adaptor.becomeRoot(stream_ID.nextNode(), root_1);
 						adaptor.addChild(root_1, stream_i1.nextNode());
 						adaptor.addChild(root_1, stream_i2.nextNode());
-						// eu\\reitmayer\\texttable\\lang\\TextTable.g:58:79: ( $al)?
+						// eu\\reitmayer\\texttable\\lang\\TextTable.g:61:79: ( $al)?
 						if ( stream_al.hasNext() ) {
 							adaptor.addChild(root_1, stream_al.nextNode());
 						}
@@ -619,18 +625,18 @@ public class TextTableParser extends Parser {
 					}
 					break;
 				case 2 :
-					// eu\\reitmayer\\texttable\\lang\\TextTable.g:60:3: ID LENGTH i1= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:63:3: ID LENGTH i1= INT (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
 					{
-					ID16=(Token)match(input,ID,FOLLOW_ID_in_plain_elem242);  
-					stream_ID.add(ID16);
+					ID17=(Token)match(input,ID,FOLLOW_ID_in_plain_elem246);  
+					stream_ID.add(ID17);
 
-					LENGTH17=(Token)match(input,LENGTH,FOLLOW_LENGTH_in_plain_elem244);  
-					stream_LENGTH.add(LENGTH17);
+					LENGTH18=(Token)match(input,LENGTH,FOLLOW_LENGTH_in_plain_elem248);  
+					stream_LENGTH.add(LENGTH18);
 
-					i1=(Token)match(input,INT,FOLLOW_INT_in_plain_elem248);  
+					i1=(Token)match(input,INT,FOLLOW_INT_in_plain_elem252);  
 					stream_INT.add(i1);
 
-					// eu\\reitmayer\\texttable\\lang\\TextTable.g:60:20: (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:63:20: (al= ALIGN_LEFT |al= ALIGN_RIGHT )?
 					int alt4=3;
 					int LA4_0 = input.LA(1);
 					if ( (LA4_0==ALIGN_LEFT) ) {
@@ -641,17 +647,17 @@ public class TextTableParser extends Parser {
 					}
 					switch (alt4) {
 						case 1 :
-							// eu\\reitmayer\\texttable\\lang\\TextTable.g:60:21: al= ALIGN_LEFT
+							// eu\\reitmayer\\texttable\\lang\\TextTable.g:63:21: al= ALIGN_LEFT
 							{
-							al=(Token)match(input,ALIGN_LEFT,FOLLOW_ALIGN_LEFT_in_plain_elem253);  
+							al=(Token)match(input,ALIGN_LEFT,FOLLOW_ALIGN_LEFT_in_plain_elem257);  
 							stream_ALIGN_LEFT.add(al);
 
 							}
 							break;
 						case 2 :
-							// eu\\reitmayer\\texttable\\lang\\TextTable.g:60:37: al= ALIGN_RIGHT
+							// eu\\reitmayer\\texttable\\lang\\TextTable.g:63:37: al= ALIGN_RIGHT
 							{
-							al=(Token)match(input,ALIGN_RIGHT,FOLLOW_ALIGN_RIGHT_in_plain_elem259);  
+							al=(Token)match(input,ALIGN_RIGHT,FOLLOW_ALIGN_RIGHT_in_plain_elem263);  
 							stream_ALIGN_RIGHT.add(al);
 
 							}
@@ -660,7 +666,7 @@ public class TextTableParser extends Parser {
 					}
 
 					// AST REWRITE
-					// elements: al, ID, i1
+					// elements: i1, ID, al
 					// token labels: i1, al
 					// rule labels: retval
 					// token list labels: 
@@ -672,14 +678,14 @@ public class TextTableParser extends Parser {
 					RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.getTree():null);
 
 					root_0 = (Object)adaptor.nil();
-					// 60:54: -> ^( ID $i1 ( $al)? )
+					// 63:54: -> ^( ID $i1 ( $al)? )
 					{
-						// eu\\reitmayer\\texttable\\lang\\TextTable.g:60:57: ^( ID $i1 ( $al)? )
+						// eu\\reitmayer\\texttable\\lang\\TextTable.g:63:57: ^( ID $i1 ( $al)? )
 						{
 						Object root_1 = (Object)adaptor.nil();
 						root_1 = (Object)adaptor.becomeRoot(stream_ID.nextNode(), root_1);
 						adaptor.addChild(root_1, stream_i1.nextNode());
-						// eu\\reitmayer\\texttable\\lang\\TextTable.g:60:67: ( $al)?
+						// eu\\reitmayer\\texttable\\lang\\TextTable.g:63:67: ( $al)?
 						if ( stream_al.hasNext() ) {
 							adaptor.addChild(root_1, stream_al.nextNode());
 						}
@@ -727,23 +733,24 @@ public class TextTableParser extends Parser {
 	public static final BitSet FOLLOW_plain_elem_list_in_plain_descr115 = new BitSet(new long[]{0x0000000000000200L});
 	public static final BitSet FOLLOW_END_in_plain_descr118 = new BitSet(new long[]{0x0000000008000000L});
 	public static final BitSet FOLLOW_27_in_plain_descr120 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_SEPARATED_in_sep_descr141 = new BitSet(new long[]{0x0000000000000040L});
-	public static final BitSet FOLLOW_BEGIN_in_sep_descr144 = new BitSet(new long[]{0x0000000000000200L});
-	public static final BitSet FOLLOW_END_in_sep_descr147 = new BitSet(new long[]{0x0000000008000000L});
-	public static final BitSet FOLLOW_27_in_sep_descr149 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_plain_elem_in_plain_elem_list161 = new BitSet(new long[]{0x0000000004000002L});
-	public static final BitSet FOLLOW_26_in_plain_elem_list164 = new BitSet(new long[]{0x0000000000000800L});
-	public static final BitSet FOLLOW_plain_elem_in_plain_elem_list168 = new BitSet(new long[]{0x0000000004000002L});
-	public static final BitSet FOLLOW_ID_in_plain_elem193 = new BitSet(new long[]{0x0000000000000400L});
-	public static final BitSet FOLLOW_FROM_in_plain_elem195 = new BitSet(new long[]{0x0000000000001000L});
-	public static final BitSet FOLLOW_INT_in_plain_elem199 = new BitSet(new long[]{0x0000000001000000L});
-	public static final BitSet FOLLOW_TO_in_plain_elem201 = new BitSet(new long[]{0x0000000000001000L});
-	public static final BitSet FOLLOW_INT_in_plain_elem205 = new BitSet(new long[]{0x0000000000000032L});
-	public static final BitSet FOLLOW_ALIGN_LEFT_in_plain_elem210 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ALIGN_RIGHT_in_plain_elem216 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ID_in_plain_elem242 = new BitSet(new long[]{0x0000000000002000L});
-	public static final BitSet FOLLOW_LENGTH_in_plain_elem244 = new BitSet(new long[]{0x0000000000001000L});
-	public static final BitSet FOLLOW_INT_in_plain_elem248 = new BitSet(new long[]{0x0000000000000032L});
-	public static final BitSet FOLLOW_ALIGN_LEFT_in_plain_elem253 = new BitSet(new long[]{0x0000000000000002L});
-	public static final BitSet FOLLOW_ALIGN_RIGHT_in_plain_elem259 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_SEPARATED_in_sep_descr143 = new BitSet(new long[]{0x0000000000000800L});
+	public static final BitSet FOLLOW_ID_in_sep_descr145 = new BitSet(new long[]{0x0000000000000040L});
+	public static final BitSet FOLLOW_BEGIN_in_sep_descr148 = new BitSet(new long[]{0x0000000000000200L});
+	public static final BitSet FOLLOW_END_in_sep_descr151 = new BitSet(new long[]{0x0000000008000000L});
+	public static final BitSet FOLLOW_27_in_sep_descr153 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_plain_elem_in_plain_elem_list165 = new BitSet(new long[]{0x0000000004000002L});
+	public static final BitSet FOLLOW_26_in_plain_elem_list168 = new BitSet(new long[]{0x0000000000000800L});
+	public static final BitSet FOLLOW_plain_elem_in_plain_elem_list172 = new BitSet(new long[]{0x0000000004000002L});
+	public static final BitSet FOLLOW_ID_in_plain_elem197 = new BitSet(new long[]{0x0000000000000400L});
+	public static final BitSet FOLLOW_FROM_in_plain_elem199 = new BitSet(new long[]{0x0000000000001000L});
+	public static final BitSet FOLLOW_INT_in_plain_elem203 = new BitSet(new long[]{0x0000000001000000L});
+	public static final BitSet FOLLOW_TO_in_plain_elem205 = new BitSet(new long[]{0x0000000000001000L});
+	public static final BitSet FOLLOW_INT_in_plain_elem209 = new BitSet(new long[]{0x0000000000000032L});
+	public static final BitSet FOLLOW_ALIGN_LEFT_in_plain_elem214 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ALIGN_RIGHT_in_plain_elem220 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ID_in_plain_elem246 = new BitSet(new long[]{0x0000000000002000L});
+	public static final BitSet FOLLOW_LENGTH_in_plain_elem248 = new BitSet(new long[]{0x0000000000001000L});
+	public static final BitSet FOLLOW_INT_in_plain_elem252 = new BitSet(new long[]{0x0000000000000032L});
+	public static final BitSet FOLLOW_ALIGN_LEFT_in_plain_elem257 = new BitSet(new long[]{0x0000000000000002L});
+	public static final BitSet FOLLOW_ALIGN_RIGHT_in_plain_elem263 = new BitSet(new long[]{0x0000000000000002L});
 }

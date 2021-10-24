@@ -1,4 +1,4 @@
-// $ANTLR 3.5 eu\\reitmayer\\texttable\\lang\\TextTable.g 2021-10-22 23:11:21
+// $ANTLR 3.5 eu\\reitmayer\\texttable\\lang\\TextTable.g 2021-10-23 15:07:08
 package eu.reitmayer.texttable.lang;
 
 import org.antlr.runtime.*;
@@ -94,10 +94,10 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = WS;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:63:4: ( ( ' ' | '\\t' | '\\f' | '\\n' | '\\r' )+ )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:64:3: ( ' ' | '\\t' | '\\f' | '\\n' | '\\r' )+
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:66:4: ( ( ' ' | '\\t' | '\\f' | '\\n' | '\\r' )+ )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:67:3: ( ' ' | '\\t' | '\\f' | '\\n' | '\\r' )+
 			{
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:64:3: ( ' ' | '\\t' | '\\f' | '\\n' | '\\r' )+
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:67:3: ( ' ' | '\\t' | '\\f' | '\\n' | '\\r' )+
 			int cnt1=0;
 			loop1:
 			while (true) {
@@ -147,12 +147,12 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = ML;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:66:4: ( '/*' ( options {greedy=false; } : . )* '*/' )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:67:3: '/*' ( options {greedy=false; } : . )* '*/'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:69:4: ( '/*' ( options {greedy=false; } : . )* '*/' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:70:3: '/*' ( options {greedy=false; } : . )* '*/'
 			{
 			match("/*"); 
 
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:67:8: ( options {greedy=false; } : . )*
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:70:8: ( options {greedy=false; } : . )*
 			loop2:
 			while (true) {
 				int alt2=2;
@@ -173,7 +173,7 @@ public class TextTableLexer extends Lexer {
 
 				switch (alt2) {
 				case 1 :
-					// eu\\reitmayer\\texttable\\lang\\TextTable.g:67:36: .
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:70:36: .
 					{
 					matchAny(); 
 					}
@@ -203,12 +203,12 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = SL;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:70:4: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\n' | '\\r' ( '\\n' )? )? )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:71:3: '//' (~ ( '\\n' | '\\r' ) )* ( '\\n' | '\\r' ( '\\n' )? )?
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:73:4: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\n' | '\\r' ( '\\n' )? )? )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:74:3: '//' (~ ( '\\n' | '\\r' ) )* ( '\\n' | '\\r' ( '\\n' )? )?
 			{
 			match("//"); 
 
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:71:8: (~ ( '\\n' | '\\r' ) )*
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:74:8: (~ ( '\\n' | '\\r' ) )*
 			loop3:
 			while (true) {
 				int alt3=2;
@@ -237,7 +237,7 @@ public class TextTableLexer extends Lexer {
 				}
 			}
 
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:71:24: ( '\\n' | '\\r' ( '\\n' )? )?
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:74:24: ( '\\n' | '\\r' ( '\\n' )? )?
 			int alt5=3;
 			int LA5_0 = input.LA(1);
 			if ( (LA5_0=='\n') ) {
@@ -248,16 +248,16 @@ public class TextTableLexer extends Lexer {
 			}
 			switch (alt5) {
 				case 1 :
-					// eu\\reitmayer\\texttable\\lang\\TextTable.g:71:25: '\\n'
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:74:25: '\\n'
 					{
 					match('\n'); 
 					}
 					break;
 				case 2 :
-					// eu\\reitmayer\\texttable\\lang\\TextTable.g:71:30: '\\r' ( '\\n' )?
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:74:30: '\\r' ( '\\n' )?
 					{
 					match('\r'); 
-					// eu\\reitmayer\\texttable\\lang\\TextTable.g:71:34: ( '\\n' )?
+					// eu\\reitmayer\\texttable\\lang\\TextTable.g:74:34: ( '\\n' )?
 					int alt4=2;
 					int LA4_0 = input.LA(1);
 					if ( (LA4_0=='\n') ) {
@@ -265,7 +265,7 @@ public class TextTableLexer extends Lexer {
 					}
 					switch (alt4) {
 						case 1 :
-							// eu\\reitmayer\\texttable\\lang\\TextTable.g:71:35: '\\n'
+							// eu\\reitmayer\\texttable\\lang\\TextTable.g:74:35: '\\n'
 							{
 							match('\n'); 
 							}
@@ -295,8 +295,8 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = BEGIN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:74:6: ( 'begin' )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:74:8: 'begin'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:77:6: ( 'begin' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:77:8: 'begin'
 			{
 			match("begin"); 
 
@@ -316,8 +316,8 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = END;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:75:4: ( 'end' )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:75:6: 'end'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:78:4: ( 'end' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:78:6: 'end'
 			{
 			match("end"); 
 
@@ -337,8 +337,8 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = PLAIN;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:76:6: ( 'plain' )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:76:8: 'plain'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:79:6: ( 'plain' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:79:8: 'plain'
 			{
 			match("plain"); 
 
@@ -358,8 +358,8 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = SEPARATED;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:77:10: ( 'separated' )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:77:12: 'separated'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:80:10: ( 'separated' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:80:12: 'separated'
 			{
 			match("separated"); 
 
@@ -379,8 +379,8 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = BY;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:78:3: ( 'by' )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:78:5: 'by'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:81:3: ( 'by' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:81:5: 'by'
 			{
 			match("by"); 
 
@@ -400,8 +400,8 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = TEXT_SEMICOLON;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:79:15: ( 'semicolon' )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:79:17: 'semicolon'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:82:15: ( 'semicolon' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:82:17: 'semicolon'
 			{
 			match("semicolon"); 
 
@@ -421,8 +421,8 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = TEXT_COMMA;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:80:11: ( 'comma' )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:80:13: 'comma'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:83:11: ( 'comma' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:83:13: 'comma'
 			{
 			match("comma"); 
 
@@ -442,8 +442,8 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = FROM;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:81:5: ( 'from' )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:81:7: 'from'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:84:5: ( 'from' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:84:7: 'from'
 			{
 			match("from"); 
 
@@ -463,8 +463,8 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = TO;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:82:3: ( 'to' )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:82:5: 'to'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:85:3: ( 'to' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:85:5: 'to'
 			{
 			match("to"); 
 
@@ -484,8 +484,8 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = LENGTH;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:83:7: ( 'length' )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:83:9: 'length'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:86:7: ( 'length' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:86:9: 'length'
 			{
 			match("length"); 
 
@@ -505,8 +505,8 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = ALIGN_LEFT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:84:11: ( 'left' )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:84:13: 'left'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:87:11: ( 'left' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:87:13: 'left'
 			{
 			match("left"); 
 
@@ -526,8 +526,8 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = ALIGN_RIGHT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:85:12: ( 'right' )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:85:14: 'right'
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:88:12: ( 'right' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:88:14: 'right'
 			{
 			match("right"); 
 
@@ -545,7 +545,7 @@ public class TextTableLexer extends Lexer {
 	// $ANTLR start "Digit"
 	public final void mDigit() throws RecognitionException {
 		try {
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:90:7: ( '0' .. '9' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:93:7: ( '0' .. '9' )
 			// eu\\reitmayer\\texttable\\lang\\TextTable.g:
 			{
 			if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
@@ -568,7 +568,7 @@ public class TextTableLexer extends Lexer {
 	// $ANTLR start "Letter"
 	public final void mLetter() throws RecognitionException {
 		try {
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:93:8: ( 'a' .. 'z' | 'A' .. 'Z' )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:96:8: ( 'a' .. 'z' | 'A' .. 'Z' )
 			// eu\\reitmayer\\texttable\\lang\\TextTable.g:
 			{
 			if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
@@ -593,12 +593,12 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = ID;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:95:4: ( Letter ( Letter | Digit | '_' )* )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:96:3: Letter ( Letter | Digit | '_' )*
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:98:4: ( Letter ( Letter | Digit | '_' )* )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:99:3: Letter ( Letter | Digit | '_' )*
 			{
 			mLetter(); 
 
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:96:10: ( Letter | Digit | '_' )*
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:99:10: ( Letter | Digit | '_' )*
 			loop6:
 			while (true) {
 				int alt6=2;
@@ -643,12 +643,12 @@ public class TextTableLexer extends Lexer {
 		try {
 			int _type = INT;
 			int _channel = DEFAULT_TOKEN_CHANNEL;
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:98:5: ( Digit ( Digit )* )
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:99:3: Digit ( Digit )*
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:101:5: ( Digit ( Digit )* )
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:102:3: Digit ( Digit )*
 			{
 			mDigit(); 
 
-			// eu\\reitmayer\\texttable\\lang\\TextTable.g:99:9: ( Digit )*
+			// eu\\reitmayer\\texttable\\lang\\TextTable.g:102:9: ( Digit )*
 			loop7:
 			while (true) {
 				int alt7=2;

@@ -1,0 +1,14 @@
+image: maven:latest
+
+variables:
+  PACKAGE_REGISTRY_URL: "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/quickinteg/${CI_COMMIT_TAG}"
+
+prepare:
+    script: "javac --version"
+
+build:
+  needs: ["prepare"]
+  script: 
+    - "mvn package -B"
+    # - "curl --header 'JOB-TOKEN: ${CI_JOB_TOKEN}' --upload-file ./target/texttool-1.0-SNAPSHOT-zip-package.zip ${PACKAGE_REGISTRY_URL}/texttool-1.0-SNAPSHOT-zip-package.zip"
+    
