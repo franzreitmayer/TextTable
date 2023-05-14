@@ -11,6 +11,7 @@
     <url>http://maven.apache.org</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.plugin.validation>VERBOSE</maven.plugin.validation>
 
 
    <maven.compiler.source>1.7</maven.compiler.source>
@@ -19,7 +20,7 @@
     </properties>
 
     <!--
-        You can use mvn exec:java -Dexec.mainClass="eu.reitmayer.texttable.ui.MainFrame" -Dexec.classpathScope=runtime
+        You can use mvn exec:java -D"exec.mainClass"="eu.reitmayer.texttable.ui.MainFrame" -D"exec.classpathScope"="runtime"
         to run the tool after compilation
 
         mvn exec:java -Dexec.mainClass="eu.reitmayer.texttable.ui.MainFrame"
@@ -27,10 +28,15 @@
     <build>
        
         <plugins>
+                <plugin>
+            <groupId>org.co dehaus.mojo</groupId> 
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>1.2.1</version>
+        </plugin>
             <plugin>
                 <groupId>org.antlr</groupId>
                 <artifactId>antlr3-maven-plugin</artifactId>
-                <version>3.5</version>
+                <version>3.4</version>
                 <executions>
                     <execution>
                         <goals>
@@ -110,6 +116,12 @@
             <groupId>org.antlr</groupId>
             <artifactId>antlr</artifactId>
             <version>3.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr-runtime</artifactId>
+            <version>3.4</version>
+            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>junit</groupId>
